@@ -1,20 +1,28 @@
-# Practica1AyD
+# 🏫 SmartCampus API - Gestión de Aulas y Reservas
 
-# Práctica CI/CD - SmartCampus
+![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-blue)
+![Flask](https://img.shields.io/badge/Flask-RESTful-lightgrey)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF)
 
-## Descripción
-Microservicio REST desarrollado en Flask para la gestión de aulas y reservas en un entorno universitario. El proyecto implementa un flujo completo de Integración y Entrega Continua (CI/CD), asegurando la calidad del código mediante pruebas automatizadas y despliegues estandarizados.
+Microservicio REST diseñado para la consulta de aulas y gestión de reservas en recintos universitarios. El proyecto sirve como prueba de concepto para la automatización de infraestructura, implementando control de calidad local mediante Git Hooks y un pipeline de Integración y Entrega Continua (CI/CD) completamente contenerizado.
 
-## Tecnologías Utilizadas
-* **Backend:** Python (Flask), Pytest, Black
-* **Contenedores:** Docker, Docker Compose
-* **Control de Calidad Local:** Git Hooks
-* **CI/CD:** GitHub Actions
+## 🏗️ Arquitectura y Stack Tecnológico
 
-## Ejecución Local con Docker
-Para ejecutar el entorno localmente, es necesario configurar las variables de entorno y construir el contenedor.
+- **Framework:** Python con Flask (memoria volátil para persistencia temporal).
+- **Testing:** Pytest (con fixtures en `conftest.py` para aislamiento de estado).
+- **Linting & Formato:** Black.
+- **Despliegue:** Docker y Docker Compose.
+- **Automatización CI/CD:** GitHub Actions (Matriz multi-entorno).
 
-1. Crear un archivo `.env` en la raíz del proyecto basándose en `.env.example`:
-   ```text
-   APP_ENV=development
-   PORT=5000
+## 📂 Estructura del Proyecto
+
+```text
+smartcampus/
+├── .git/hooks/           # Scripts de validación local (pre-commit, post-commit, pre-push)
+├── .github/workflows/    # Definición del pipeline CI/CD (ci-cd.yml)
+├── app/                  # Lógica de negocio y endpoints de Flask
+├── tests/                # Suite de pruebas unitarias y de integración
+├── Dockerfile            # Receta de construcción de la imagen
+├── docker-compose.yml    # Orquestación local de contenedores
+└── requirements.txt      # Dependencias estandarizadas
