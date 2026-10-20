@@ -81,3 +81,6 @@ Aunque el proyecto cumple con los requisitos de integración continua, para evol
    Sustituir el despliegue efímero de Docker Compose por manifiestos YAML (Deployment, Service, Ingress) para permitir auto-escalado y alta disponibilidad en un clúster de Kubernetes.
 4. **Auto-Documentación Viva (Swagger/OpenAPI):** 
    Integrar librerías como `flasgger` para autogenerar una interfaz gráfica en `/apidocs`, permitiendo testear los endpoints directamente desde el navegador sin depender de herramientas externas como Postman.
+
+
+   
