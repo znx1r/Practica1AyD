@@ -83,4 +83,31 @@ Aunque el proyecto cumple con los requisitos de integración continua, para evol
    Integrar librerías como `flasgger` para autogenerar una interfaz gráfica en `/apidocs`, permitiendo testear los endpoints directamente desde el navegador sin depender de herramientas externas como Postman.
 
 
+
+
+## 📸 Evidencias de Ejecución
+
+A continuación se adjuntan las pruebas gráficas del correcto funcionamiento de la infraestructura automatizada.
+
+### 1. Tests y Git Hooks (Local)
+Demostración de los hooks locales bloqueando el commit hasta que el código pasa el formateo y las pruebas unitarias.
+![Ejecución de Tests Locales](assets/01-git-hooks.png)
+
+### 2. Contenedor Docker (Local)
+Despliegue local funcionando correctamente y respondiendo al healthcheck.
+![Healthcheck de Docker](assets/02-docker.png)
+
+### 3. Pipeline CI/CD (GitHub Actions)
+Ejecución exitosa en la nube mostrando el flujo de trabajo principal completado.
+![Pipeline CI/CD en verde](assets/03-pipeline-general.png)
+
+### 4. Matriz Multi-entorno
+Detalle de los trabajos paralelos de integración para Python 3.11 y 3.12, junto a la construcción del contenedor.
+![Matriz Multi-entorno](assets/04-pipeline-matriz.png)
+
+### 5. Estructura del Repositorio
+Vista final del proyecto evidenciando la correcta ubicación del workflow y la documentación renderizada.
+![Repositorio Final](assets/05-repositorio-final.png)
+
+
    
