@@ -1,4 +1,4 @@
-# 🏫 SmartCampus API - Gestión de Aulas y Reservas
+# SmartCampus API - Gestión de Aulas y Reservas
 
 ![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-blue)
 ![Flask](https://img.shields.io/badge/Flask-RESTful-lightgrey)
@@ -7,7 +7,7 @@
 
 Microservicio REST diseñado para la consulta de aulas y gestión de reservas en recintos universitarios. El proyecto sirve como prueba de concepto para la automatización de infraestructura, implementando control de calidad local mediante Git Hooks y un pipeline de Integración y Entrega Continua (CI/CD) completamente contenerizado.
 
-## 🏗️ Arquitectura y Stack Tecnológico
+## Arquitectura y Stack Tecnológico
 
 - **Framework:** Python con Flask (memoria volátil para persistencia temporal).
 - **Testing:** Pytest (con fixtures en `conftest.py` para aislamiento de estado).
@@ -28,7 +28,7 @@ smartcampus/
 └── requirements.txt      # Dependencias estandarizadas
 ```
 
-## 🔌 Documentación de la API (Endpoints Principales)
+## Documentación de la API (Endpoints Principales)
 
 El servicio expone respuestas en formato JSON.
 
@@ -69,7 +69,7 @@ El ciclo de vida del código está fuertemente tipado mediante un pipeline de do
 
 ---
 
-## 🔮 Mejoras Propuestas para Entorno de Producción
+## Mejoras Propuestas para Entorno de Producción
 
 Aunque el proyecto cumple con los requisitos de integración continua, para evolucionar hacia un entorno de grado de producción (Enterprise) se proponen las siguientes mejoras arquitectónicas:
 
