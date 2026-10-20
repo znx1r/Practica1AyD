@@ -1,0 +1,5 @@
+Autor: JuanRomero2005
+Hash: 981512e
+Mensaje: feat: implementacion inicial de aulas, reservas y tests
+Fecha: 20/10/2026
+----------------------------------------
